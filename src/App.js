@@ -15,7 +15,7 @@ import NotFound from './pages/NotFound';
 const App =()=>{
   return(
   <div>
-    <BrowserRouter>
+    <BrowserRouter basename={'/platzi-badges/'}>
       <Layout>
             <Switch>
                 <Route exact path="/" component={Home}/>
