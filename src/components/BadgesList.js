@@ -94,7 +94,7 @@ function BadgesList (props){
                             {filteredBadges.map((badge)=>{
                                 return(
                                 <li key={badge.id}>
-                                    <Link to={`/badges/${badge.id}/edit`} 
+                                    <Link to={`/badges/${badge.id}/`} 
                                     className="text-reset text-decoration-none">
                                         <BadgesListItem badge={badge}/>                  
                                     </Link>

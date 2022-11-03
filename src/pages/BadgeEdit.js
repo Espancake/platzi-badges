@@ -15,11 +15,11 @@ class BadgeEdit extends React.Component{
         loading:true,
         error:null,
         form:{
-            firstName: '',
-            lastName: '',
-            email: '',
-            jobTitle: '',
-            twitter: '',
+            firstName: 'j',
+            lastName: 'j',
+            email: 'j',
+            jobTitle: 'j',
+            twitter: 'j',
 
         }
     }
@@ -37,7 +37,7 @@ class BadgeEdit extends React.Component{
             )
 
             this.setState({loading:false, form: data,})
-            console.log(this.state.data.form)
+            console.log(this.state.form)
         } catch (error) {
             this.setState({loading:false, error:error})
         }
